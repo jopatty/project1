@@ -29,7 +29,7 @@ public class WeaponMovement : MonoBehaviour
         }
     }
 
-    private void Shoot() {
+    private void Shoot(){
         Instantiate(bulletPrefabs, firingPoint.position, firingPoint.rotation);
     }
 }

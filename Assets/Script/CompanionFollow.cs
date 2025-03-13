@@ -19,4 +19,8 @@ public class CompanionFollow : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
         }
     }
+    private int CompurrentHealth;
+    public int CompmaxHealth;
+    private bool isInvicible = false; //Untuk cooldown hit
+    public float invincibilityDuration = 1.5f;
 }
