@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CompanionFollow : MonoBehaviour
 {
@@ -58,5 +59,9 @@ public class CompanionFollow : MonoBehaviour
     void Destroyed()
     {
         
+    }
+    private void UpdateHpBar()
+    {
+        UIManager.Instance.UpdateCompanionHP (CompcurrentHealth, CompmaxHealth);
     }
 }
